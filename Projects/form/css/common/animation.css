@@ -1,0 +1,52 @@
+/* Waiting */
+.dots {
+    width: 5px;
+    height: 5px;
+    background: #4e525f;
+    color: #4e525f;
+    border-radius: 50%;
+    box-shadow: 8px 0,-8px 0;
+    animation: dots-u8fzftlg 1s infinite linear alternate;
+}
+
+@keyframes dots-u8fzftlg {
+    0% {
+        box-shadow: 8px 0,-8px 0;
+    }
+
+    33% {
+        box-shadow: 8px 0,-8px 0 rgba(78,82,95,0.13);
+        background: rgba(78,82,95,0.13);
+    }
+
+    66% {
+        box-shadow: 8px 0 rgba(78,82,95,0.13),-8px 0;
+        background: rgba(78,82,95,0.13);
+    }
+}
+
+/* Loading */
+.spinner {
+    width: 4px;
+    height: 4px;
+    border-radius: 4px;
+    box-shadow: 8px 0px 0 0 rgba(78, 82, 95, 0.2),
+                6.4px 4.7px 0 0 rgba(78, 82, 95, 0.4),
+                2.44px 7.5px 0 0 rgba(78, 82, 95, 0.6),
+                -2.44px 7.5px 0 0 rgba(78, 82, 95, 0.8),
+                -6.4px 4.7px 0 0 #4e525f;
+    animation: spinner-b87k6z 1s infinite linear;
+}
+
+@keyframes spinner-b87k6z {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+
+ 

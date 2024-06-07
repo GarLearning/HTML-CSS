@@ -1,0 +1,119 @@
+body {
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+main { 
+    display: flex;
+}
+
+.preview {display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 600px;
+    margin: 5px;
+    background: #bec2d3;
+    border-radius: 5px;
+}
+
+.main-title {
+    width: 550px;
+	font-size: 30px;
+	color: #5d5e64;
+    margin: 10px;
+}
+
+#preview-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	width: 550px;
+	max-height: 500px;
+	padding: 0 5px 5px 5px;
+	margin-bottom: 20px;
+	background-color: #959dbe;
+	border-radius: 5px;
+    overflow: hidden auto;
+}
+
+#preview-content::-webkit-scrollbar {
+	width: 3px;
+}
+
+#preview-content::-webkit-scrollbar-thumb {
+	background-color: var(--dark-blue-grey);
+	border-radius: 5px;
+}
+
+#preview-content > table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+#preview-content > table > thead {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background: #959dbe;
+    z-index: 1;
+}
+
+#preview-content td {
+    padding: 6.5px;
+    color: var(--dark-grey);
+}
+
+#preview-content th {
+    width: 390px;
+    height: 40px;
+	font-size: 15px;
+    font-weight: 600;
+    margin: 10px;
+    border-bottom: 5px solid #ffffff00;
+    color: var(--dark-grey);
+}
+
+#preview-content tr th:nth-child(1) {
+
+    min-width: 200px;
+    max-width: 200px;
+}
+
+
+#preview-content tr td:nth-child(1) > span {
+    color: var(--light-blue-grey);
+    font-size: 0.6em;
+    text-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: auto;
+	height: 15px;
+	min-height: 15px;
+    background-color: var(--dark-blue-grey);
+	cursor: default;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+#preview-content tr th:not(:nth-child(1)),
+#preview-content tr td:not(:nth-child(1)) {
+    min-width: 70px;
+    max-width: 70px;
+    text-align: center;
+    position: relative;
+    top: 3px;
+}
+
+#preview-content tr td:not(:nth-child(1)):not(:nth-child(5)) > div {
+    position: relative;
+    left: 33.5px;
+    top: 3px;
+}
+
+#preview-content tr td:nth-child(5) > span {
+    font-size: 0.8em;
+    font-weight: 600;
+}

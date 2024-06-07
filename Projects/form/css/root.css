@@ -1,0 +1,31 @@
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+
+    text-decoration: none;
+    box-shadow:border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    display: flex;
+	width: 100vw;
+    height: 100vh;
+    font-size: 100%;
+    list-style-type: none;
+    background: #676d85;
+    overflow-x: hidden;
+}
+
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --light-blue-grey: #bec2d3; /*Components*/
+    --dark-blue-grey: #535c7e; /*Backnav, Border, Shadow*/
+    --dark-grey: #4e525f; /*Text, Backinp dialog*/
+    --blue-grey : #959dbe; /*Btn, Input and Dialog background*/
+    --shadow-from-blue-grey: #848ba7;
+    --storm-gray: #676d85; /*Tags*/
+}

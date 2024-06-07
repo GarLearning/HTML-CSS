@@ -12,4 +12,6 @@
 
 ## ☛ [Simples](Simples)
 
+## ☛ [Projects](Projects)
+
 ## ☛ [DOCS](DOCS)

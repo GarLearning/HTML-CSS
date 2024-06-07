@@ -1,0 +1,132 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Ticket
+    </title>
+    
+    <link rel="stylesheet" href="../css/root.css">
+    <link rel="stylesheet" href="../css/form.css">
+
+<body class="vsc-initialized">
+    <main>
+        <div class="req-form">
+            <div class="main-title">
+                <span>Create Ticket</span>
+            </div>
+
+            <form action="/html/preview.html" method="get" id="ticket" class="form-options">
+                <div class="info">
+                    <div class="tag">
+                        <input type="text" class="" name="Field1" id="Field1" required="" autocomplete="off">
+                        <span class="inp-text">Field1</span>
+                    </div>
+                    <div class="tag">
+                        <input type="text" class="" name="Field2" id="Field2" placeholder=" " autocomplete="off">
+                        <span class="inp-text">Field2</span>
+                    </div>
+                </div>
+
+                <div class="info">
+                    <div class="tag">
+                        <input type="text" class="" name="Field3" id="Field3" placeholder=" " autocomplete="off">
+                        <span class="inp-text">Field3</span>
+                    </div>
+                    <div class="tag">
+                        <input type="text" class="" name="Field4" id="Field4" placeholder=" " autocomplete="off">
+                        <span class="inp-text">Field4</span>
+                    </div>
+                    <div class="tag">
+                        <input type="text" class="" name="Field5" id="Field5" placeholder=" " autocomplete="off">
+                        <span class="inp-text">Field5</span>
+                    </div>
+                    <div class="tag">
+                        <input type="text" class="" name="Field6" id="Field6" placeholder=" " autocomplete="off">
+                        <span class="inp-text">Field6</span>
+                    </div>
+                </div>
+
+                <div class="info">
+                    <div class="tag">
+                        <input type="text" class="" name="Field7" id="Field7" required="" autocomplete="off">
+                        <span class="inp-text">Field7</span>
+                    </div>
+                    <div class="tag">
+                        <input type="text" class="" name="Field8" id="Field8" required="" autocomplete="off">
+                        <span class="inp-text">Field8</span>
+                    </div>
+                </div>
+
+                <div class="info">
+                    <div class="tag">
+                        <input type="text" class="" name="Field9" id="Field9" required="" autocomplete="off">
+                        <span class="inp-text">Field9</span>
+                    </div>
+                    <div class="tag">
+                        <input type="text" class="" name="Field10" id="Field10" placeholder=" " autocomplete="off">
+                        <span class="inp-text">Field10</span>
+                    </div>
+                </div>
+
+                <div class="info" id="category-field">
+                    <div class="tag categories">
+                        <span>Categories</span>
+                    </div>
+                    <button class="btn-config" form="" id="open-categories">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="15" viewBox="0 0 320 512"><path fill="#d4d7dd" d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"></path></svg>
+                    </button>
+
+                    <div class="categories-contents categories-contents-hide" id="categories-contents-identifier">
+                        <input type="hidden" id="categories" name="categories">
+                        <div class="tag search-field" id="search-content">
+                            <input type="search" class="" name="search-categories" id="search-categories" placeholder=" " autocomplete="off">
+                            <span class="inp-text">Search System Categories</span>
+                        </div>
+                        <div class="search-field" id="search-results">
+                            <div class="menu-categories" id="system">
+                                <div class="menu-categories-title">
+                                    <span>System</span>
+                                </div>
+                                <ul class="menu-list" id="menu-list-system"></ul>
+                            </div>
+                            <div class="menu-categories" id="type">
+                                <div class="menu-categories-title">
+                                    <span>Type</span>
+                                </div>
+                                <ul class="menu-list" id="menu-list-type"></ul>
+                            </div>
+                            <div class="menu-categories" id="category">
+                                <div class="menu-categories-title">
+                                    <span>Category</span>
+                                </div>
+                                <ul class="menu-list" id="menu-list-categories"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <div class="manipulation">
+                <button type="submit" class="btn-config" id="submit" form="ticket">Submit</button>
+                <button type="reset" class="btn-config" id="clear" form="ticket">Clear</button>
+            </div>
+        </div>
+
+        <div class="req-form" id="display-selected-category" style="display: none;">
+            <div class="main-title">
+                <span>Selected Categories</span>
+            </div>
+            <input type="hidden" name="t" id="t">
+        
+            <ul id="selected-categories"></ul>
+        </div>
+    </main>
+
+
+    
+    <script src="../javascript/fetchData.js"></script>
+    <script src="../data/dataSystems.js"></script>
+    <script src="../javascript/form.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,2 @@
+# Form
+This project demonstrates a web form with HTML/CSS/JavaScript, featuring infinite scroll with lazy loading search capabilities, and a preview page that shows the status of each phase of the form submission. The primary goal is to provide a seamless user experience by dynamically loading data as the user scrolls and presenting a comprehensive status preview.
